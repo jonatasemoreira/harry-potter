@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+footer {
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background-color: black;
+    color: white;
+    animation: nuvens 2s infinite;
+}
+.btn-sound {
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    background-color: transparent;
+    border: 1px solid red;
+    outline: 0;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px white;
+    cursor: pointer;
+}
+.btn-sound:active {
+    transform: scale(1.1);
+}
+.title-hp {
+    height: 10rem;
+    line-height: 10rem;
+    text-align: center;
+    background-color: black;
+    color: silver;
+    animation: nuvens 2s infinite;
+}
+@keyframes nuvens {
+    0%,
+    100% {
+        text-shadow: 1px 1px 10px white;
+    }
+    50% {
+        text-shadow: 5px 5px 15px;
+    }
+}
+#movies {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-image: url(https://i.pinimg.com/originals/df/3a/58/df3a58aa36211c15e6ecf89dc585261d.gif);
+    text-align: center;
+}
+#movies {
+    padding-left: 50px;
+}
+#movies div {
+    width: 200px;
+    margin-bottom: 15px;
+    color: white;
+    text-shadow: 1px 1px 10px red;
+    background-color: rgba(192, 192, 192, 0.288);
+}
+#movies div h2 {
+    padding: 5px;
+}
+#movies div img {
+    width: 180px;
+    border-radius: 10px 0 10px 0;
+    box-shadow: 1px 1px 10px black;
+}
+#movies div img:active {
+    animation: pulsar 0.5s ease-in-out;
+}
+@keyframes pulsar {
+    0% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
